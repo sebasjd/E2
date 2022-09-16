@@ -42,8 +42,15 @@ function filtro(inputID) {
     }
 }
 
+function error() {
+
+    h2.innerHTML = `Sin stock`;
+    h4.innerHTML = ``;
+
+}
+
 function button(e) {
     e.preventDefault();
     var inputID = input.value.trim();
-    inputID <= pizzas.length && inputID > 0 ? filtro(inputID) : console.log("Sin stock");
+    inputID <= pizzas.length && inputID > 0 ? filtro(inputID) : error();
 }
