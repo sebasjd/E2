@@ -41,7 +41,7 @@ function filtro(inputID) {
     const laPizza = pizzas.filter((piza) => piza.ID == inputID)
     for (piza of laPizza) {
         h2.innerHTML = `${piza.nombre}`;
-        h4.innerHTML = `${piza.precio}`;
+        h4.innerHTML = `$ ${piza.precio}`;
     }
 }
 
@@ -57,8 +57,17 @@ function error() {
 // acción del boton
 btn.addEventListener('click', button)
 
+
 function button(e) {
     e.preventDefault();
     var inputID = input.value.trim();
     inputID <= pizzas.length && inputID > 0 ? filtro(inputID) : error();
+}
+
+function buttonEnter(e) {
+    e.preventDefault();
+    if (e.keyCode === 13) {
+        var inputID = input.value.trim();
+        inputID <= pizzas.length && inputID > 0 ? filtro(inputID) : error();
+    }
 }
