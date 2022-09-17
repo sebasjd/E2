@@ -48,6 +48,7 @@ body {
 #input {
     display: flex;
     position: absolute;
+    font-weight: bold;
     margin-top: 160px;
     width: 100px;
     height: 30px;
