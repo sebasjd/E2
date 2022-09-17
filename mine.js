@@ -62,12 +62,5 @@ function button(e) {
     e.preventDefault();
     var inputID = input.value.trim();
     inputID <= pizzas.length && inputID > 0 ? filtro(inputID) : error();
-}
-
-function buttonEnter(e) {
-    e.preventDefault();
-    if (e.keyCode === 13) {
-        var inputID = input.value.trim();
-        inputID <= pizzas.length && inputID > 0 ? filtro(inputID) : error();
-    }
+    input.value = ""
 }
