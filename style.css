@@ -87,6 +87,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    transition: 250ms;
 }
 
 .content {
@@ -98,4 +99,27 @@ body {
     border-radius: 30px;
     background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
     box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+}
+
+i {
+    display: flex;
+    position: absolute;
+    color: black;
+    font-size: 60px;
+    bottom: 20%;
+    transition: 250ms;
+    margin-left: -1.5vw;
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
+
+#btn:active {
+    transform: scale(1.05);
+    transition: 150ms;
 }
