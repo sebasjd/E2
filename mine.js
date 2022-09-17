@@ -22,18 +22,21 @@ let pizzas = [muzzarella = new pizza(`1`, `Muzzarella`, ingredientes = [`tomate`
     sinQueso = new pizza(`6`, `Sin Queso`, ingredientes = [`tomate`, `oregano`], 500),
 ]
 
-
+// guardo el array en el localStorage
 const saveLocalStorage = (pizzas) => {
     localStorage.setItem('pizzas2', JSON.stringify(pizzas))
 };
 saveLocalStorage(pizzas)
 
+// Recupero el array del localStorage
 let getPizzas = JSON.parse(localStorage.getItem('pizzas2'));
 
+/////////////////////////////////
+//    El localStorage solo se usó para practicar, no es necesario
+/////////////////////////////////
 
-btn.addEventListener('click', button)
 
-
+// Función que se ejecuta si el resultado es correcto
 function filtro(inputID) {
     const laPizza = pizzas.filter((piza) => piza.ID == inputID)
     for (piza of laPizza) {
@@ -42,12 +45,17 @@ function filtro(inputID) {
     }
 }
 
+// Función que se ejecuta si el resultado es erroneo
 function error() {
 
     h2.innerHTML = `Sin stock`;
     h4.innerHTML = ``;
 
 }
+
+
+// acción del boton
+btn.addEventListener('click', button)
 
 function button(e) {
     e.preventDefault();
