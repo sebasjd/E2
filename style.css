@@ -194,6 +194,7 @@ i:hover {
         width: 230px;
         top: -28vh;
         transition: 250ms;
+        left: 16%;
     }
     i {
         top: 80%;
