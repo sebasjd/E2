@@ -203,14 +203,14 @@ i:hover {
     }
 }
 
-@media (max-height: 200px) {
+@media (max-height: 500px) {
     .img {
         height: 150px;
         width: 200px;
     }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 550px) {
     #btn {
         top: 80vh;
     }
