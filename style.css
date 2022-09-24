@@ -203,7 +203,7 @@ i:hover {
     }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 600px) {
     #btn {
         top: 80vh;
     }
