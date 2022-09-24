@@ -11,13 +11,6 @@ body {
     justify-content: center;
 }
 
-.content {
-    width: 50%;
-    padding-top: 8px;
-    padding-left: 0%;
-    border-radius: 30px;
-}
-
 .card {
     display: flex;
     position: absolute;
@@ -25,11 +18,18 @@ body {
     align-items: center;
     width: 500px;
     height: 170px;
-    margin-top: 5vh;
+    margin-top: 30px;
     padding: 10px 0 30px 0;
     border-radius: 50px;
     background: rgb(33, 85, 167);
     background: linear-gradient(180deg, rgba(33, 85, 167, 1) 0%, rgba(3, 39, 95, 1) 69%);
+}
+
+.content {
+    width: 50%;
+    padding-top: 8px;
+    padding-left: 0%;
+    border-radius: 30px;
 }
 
 #h22 {
@@ -91,7 +91,7 @@ form {
     border-radius: 50px;
     text-align: center;
     background-image: linear-gradient(to right, #007c94 0%, #01cf61 100%);
-    top: 40%;
+    top: 220px;
 }
 
 #input:focus {
@@ -137,7 +137,7 @@ form {
     text-decoration: none;
     width: 7em;
     z-index: 2;
-    top: 47%;
+    top: 265px;
 }
 
 #btn:hover {
