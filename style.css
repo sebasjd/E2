@@ -162,7 +162,7 @@ form {
 i {
     display: flex;
     position: absolute;
-    color: black;
+    color: rgb(5, 56, 139);
     font-size: 60px;
     bottom: 20%;
     transition: 250ms;
@@ -200,6 +200,13 @@ i:hover {
         top: 80%;
         left: 80%;
         color: rgba(3, 39, 95, 1)
+    }
+}
+
+@media (max-height: 200px) {
+    .img {
+        height: 150px;
+        width: 200px;
     }
 }
 
