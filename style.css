@@ -212,7 +212,7 @@ i:hover {
     }
 }
 
-@media (max-height: 550px) {
+@media (max-height: 650px) {
     #btn {
         top: 80vh;
     }
