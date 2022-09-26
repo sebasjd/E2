@@ -185,11 +185,11 @@ i:hover {
         width: 90%;
     }
     #input {
-        top: 415px;
+        top: 65vh;
         border: groove 5px #03d264;
     }
     #btn {
-        top: 470px;
+        top: 75vh;
     }
     .img {
         position: absolute;
@@ -219,7 +219,7 @@ i:hover {
         top: 80vh;
     }
     #input {
-        top: 60px;
+        top: 60vh;
         border: groove 5px #03d264;
     }
     .img {
