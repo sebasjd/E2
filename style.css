@@ -174,7 +174,7 @@ i:hover {
     transform: scale(1.5);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .card {
         width: 320px;
         top: 25vh;
