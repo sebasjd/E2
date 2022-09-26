@@ -23,6 +23,7 @@ body {
     border-radius: 50px;
     background: rgb(33, 85, 167);
     background: linear-gradient(180deg, rgba(33, 85, 167, 1) 0%, rgba(3, 39, 95, 1) 69%);
+    border: groove 5px #03d264;
 }
 
 .content {
@@ -91,7 +92,8 @@ form {
     border-radius: 50px;
     text-align: center;
     background-image: linear-gradient(to right, #007c94 0%, #01cf61 100%);
-    top: 220px;
+    top: 225px;
+    border: groove 5px #03d264;
 }
 
 #input:focus {
@@ -137,7 +139,7 @@ form {
     text-decoration: none;
     width: 7em;
     z-index: 2;
-    top: 265px;
+    top: 280px;
 }
 
 #btn:hover {
@@ -207,13 +209,11 @@ i:hover {
     .img {
         height: 150px;
         width: 200px;
-    }
-    .img {
         left: 20% !important;
     }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 550px) {
     #btn {
         top: 80vh;
     }

@@ -34,6 +34,14 @@ saveLocalStorage(pizzas)
 // Recupero el array del localStorage
 let getPizzas = JSON.parse(localStorage.getItem('pizzas2'));
 
+//Guardo última busqueda en el localStorage
+const saveLS = (searched) => {
+    localStorage.setItem('search', JSON.stringify(searched))
+};
+
+//recupero última busqueda
+const getLS = JSON.parse(localStorage.getItem('search'))
+
 
 
 
@@ -68,6 +76,18 @@ function button(e) {
     e.preventDefault();
     var inputID = input.value.trim();
     inputID <= pizzas.length && inputID > 0 ? renderPizza(inputID) : inputID == "" ? error("Debe ingresar un ID") : error("ID invalido");
-    input.value = ""
+    saveLS(input.value);
+    input.value = "";
 
 }
+
+const init = () => {
+
+    input.value = getLS;
+    input.value <= pizzas.length && input.value > 0 ? renderPizza(input.value) : input.value == "" ? error("Debe ingresar un ID") : error("ID invalido");
+    console.log(getLS);
+    input.value = "";
+
+}
+
+init();
