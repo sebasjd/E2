@@ -14,7 +14,7 @@ const getLS = JSON.parse(localStorage.getItem('search'))
 // Estado inicial del programa
 const init = () => {
     input.value = getLS;
-    input.value <= pizzas.length && input.value > 0 ? renderPizza(input.value) : input.value == "" ? error("Debe ingresar un ID") : error("ID invalido");
+    input.value <= pizzas.length && input.value > 0 ? renderPizza(input.value) : input.value == "" ? renderPizza() : error("ID invalido");
     console.log(getLS);
     input.value = "";
 }
